@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- LaunchAgent for DesktopText: starts it at login, restarts it only if it crashes. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>local.desktoptext</string>
+  <key>ProgramArguments</key>
+  <array><string>/path/to/DesktopText/DesktopText</string></array>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><dict><key>SuccessfulExit</key><false/></dict>
+  <key>ProcessType</key><string>Interactive</string>
+  <key>StandardOutPath</key><string>/path/to/DesktopText/DesktopText.log</string>
+  <key>StandardErrorPath</key><string>/path/to/DesktopText/DesktopText.log</string>
+</dict>
+</plist>
